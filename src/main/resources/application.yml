@@ -1,0 +1,28 @@
+server:
+  port: 9000
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.springframework.security.oauth2: INFO
+
+
+com:
+  eon:
+    config:
+      oauth:
+        app: MyApp
+        expirationInSeconds: 60
+        issuer: http://myapp.com
+        clients:
+          -
+            name: DEV
+            id: aa0a3eaf-e526-48e7-be72-bb74a510997b
+            clientId: test
+            clientSecret: password
+          - name: QA
+            id: b7de981e-5ad0-40cf-be70-5d302b8a72af
+            clientId: admin
+            clientSecret: xxxyyyzzz
